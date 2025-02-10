@@ -1,0 +1,130 @@
+.dasnboardheader{
+    display: grid;
+    grid-template-columns: 2fr 3fr 7fr;
+    height: 70px;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background: #ffffffe6;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.leftBlock{
+    display: flex;
+    margin-left: 27%;
+    align-items: center;
+}
+.leftBlock img{
+    height: 65px;;
+}
+.centerBlock{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.centerBlock svg{
+    color: #292929;
+    font-size: 18px;
+}
+.searchBox{
+    display: flex;
+    align-items: center;
+    background: #f0f5ff;
+    border-radius: 6px;
+    height: 40px;
+    padding: 3px 15px;
+    width: 215px;
+    gap: 10px;
+}
+.roundedCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f5ff;
+    /* color: #0858f7; */
+    height: 40px; 
+    min-width: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+}
+.centerBlock input{
+    background: #0000;
+    border: 0;
+    color: #292929;
+    font-size: 14px;
+    outline: none;
+    padding-left: 0;
+}
+.w0pj6f{
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    inset: 0px;
+    border-radius: inherit; 
+}
+.roundedCircle svg{
+    color: #292929;
+    font-size: 18px;
+    transition: all .2s ease-in-out;
+}
+.rightBlock{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.userInfo{
+    text-align: center;
+}
+.userInfo h4{
+    color: #292929;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    margin-bottom: 0;
+}
+.userInfo p{
+    color: #000;
+    font-size: 12px;
+    margin-top: 0;
+    opacity: .7;
+}
+.userImg{
+    border: 1px solid #0858f7;
+    border-radius: 100%;
+    height: 40px;
+    padding: 2px;
+    width: 40px;
+    overflow: hidden;
+}
+.avatName{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.roundedCircle img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+@media (max-width: 400px) {
+    .dasnboardheader{
+        grid-template-columns: 65px 1fr; 
+        justify-content: space-between;
+    }
+    .leftBlock{
+        margin-left: 10px;
+    }
+    .leftBlock img{
+        height: 35px;
+    }
+    .roundedCircle{
+        display: none;
+    }
+    .rightBlock{
+        display: none;
+    }
+}

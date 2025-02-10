@@ -1,0 +1,1739 @@
+.mainBlock{
+    height: 650px;
+    /* background-color: #0F1139; */
+    width: 100%;
+    background: linear-gradient(-45deg, #0F1139, #151ebe, hwb(27 45% 0%), #ef5f5f, #d840b6);
+    background-size: 400% 400%;
+    animation: bg 60s ease infinite;
+
+}
+
+@keyframes bg{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 50%; 
+    }
+
+}
+.blurBlock{
+    height: 30px;
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: white;
+    filter: blur(2rem);
+    border-radius: 50%;
+    opacity: .2;
+    
+}
+.textDecoretion{
+    text-decoration: none;
+}
+.headerBlock{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    height: 40px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.headerBlock h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.headerBlock a{
+    text-decoration: none;
+}
+.headerMenu{
+    display: flex;
+    gap: 10px;
+}
+.headerMenu a{
+  color: white;
+  text-decoration: none;  
+  font-size: 16px;
+}
+.MenuPlanshet{
+    display: none;
+}
+.headerLogo{
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+    max-width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+.headerCarRegist{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 25px;
+}
+.headerCar{
+    position: relative;
+}
+.currentCart{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #B70404;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;    
+}
+
+.headerRegist{
+    display: flex;
+    align-items: center;
+    width: 181px;
+    height: 40px;
+    border-radius: 16px;
+    background-color: white;
+    color: #3337BF;
+    cursor: pointer;
+}
+.headerRegist span{
+    margin: 0 10px;
+}
+.mainBlock {
+    padding-top: 50px;
+}
+.mainBlock .headerBlock a{
+    color: #fff;
+}
+.mainBlock .userInfo h4,
+.mainBlock .userInfo p{
+    color: #fff;
+}
+.mainBlock .userImg{
+    border: 2px solid #fff;
+}
+.mainBlock .headerLogo svg{
+    fill: #fff;
+}
+.mainBlock .headerCar svg{
+    fill: #fff;
+}
+.mainBlock .headerRegist svg{
+    fill: #000;
+}
+.mainTitle{
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: end;
+    height: 245px;
+    text-align: center;
+}
+.mainTitle h2{ 
+    font-size: 48px;
+    color: white;
+    font-weight: 600;
+    display: grid;
+    line-height: 1em;
+}
+
+.mainTitle h4{ 
+    font-size: 28px;
+    color: white;
+    font-weight: 400;
+}
+.findTicket{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 70px;
+}
+.findTicket input{
+    height: 55px;
+    border-radius: 12px;
+    padding-left: 50px;
+    border: none;
+    
+}
+.findTicket input::placeholder {
+    font-size: 15px;
+}
+.findName,
+.findLocation,
+.manDate{
+    position: relative;
+}
+.findLocation input{
+    font-size: 16px;
+    color: #505050;
+}
+.findName .man{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+}
+.resultSearch{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 500px;
+    max-height: 250px;
+    background-color: #fff;
+    padding-left: 25px;
+    line-height: 2em;
+    z-index: 2;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.resultSearch a{
+    text-decoration: none;
+    color: #222222;
+    cursor: pointer;
+}
+.resultLocation{
+    width: 250px;
+}
+.resultLocation p{
+    cursor: pointer;
+}
+.manDate{
+    width: 200px;
+    height: 55px;
+    border-radius: 12px;
+    background-color: white;
+    
+}
+.selectData{
+    position: absolute;
+    top: 16px;
+    left: 53px;
+    opacity: .7;
+    font-size: 16px;
+}
+.manDate input{
+    position: relative;
+    width: 35px;
+    z-index: 1;
+    opacity: 0;
+    padding-left: 0;
+}
+.findName .manClose{
+    position: absolute;
+    top: 18px;
+    right: 10px; 
+    cursor: pointer;
+}
+.findLocationIcon,
+.iconDate{
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    cursor: pointer;
+}
+.findLocationSelect{
+    position: absolute;
+    top: 17px;
+    right: 10px; 
+    cursor: pointer;
+}
+.btnSearch{
+    background-color: #3337BF;
+    width: 160px;
+    border-radius: 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* topSlider */
+.topSlider{
+    height: 325px;
+    margin-top: -150px;
+    overflow: hidden;
+    white-space: nowrap; /* Предотвратить перенос строк */
+    width: 100%;
+}
+
+.leftEllipse,
+.rightEllipse{
+    position: absolute;
+    top: -10px;
+    height: 46px;
+    width: 46px;
+    background-color: #3337BF;
+    filter: blur(3em);
+}
+.rightEllipse{
+    right: 0;
+}
+.blockSlider{
+    display: inline-block;
+    width: 191px;
+    height: 325px;
+    position: relative;
+    flex-shrink: 0;
+    margin-right: 16px; 
+}
+.blockImage{
+    height: 191px;
+    width: 143px;
+    border-radius: 12px;
+    border: #ADAFE5 solid 4px; 
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.blockImage img{
+    height: 100%;
+    /* width: 100%; */
+}
+.blockInfo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    align-items: end;
+    grid-template-rows: 1fr 50px;
+    height: 216px;
+    width: 191px;
+    border-radius: 12px;
+    background-color: white;
+    overflow: hidden;
+}
+.blockTitle{
+    width: 143px;
+    margin: 0 auto;
+}
+.blockTitle h6{
+    color: #0F1139;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1em;
+    height: 35px;
+    overflow: hidden;
+}
+.blockTitle b{
+    color: #000;
+}
+.blockTitle p{
+    font-size: 10px;
+    color: #9D9D9D;
+}
+.blockTitle{
+    font-size: 14px;
+    font-weight: 500;
+}
+.blockBook{
+    background-color: #EBEBF9;
+    color: #3337BF;
+    font-size: 14px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.blockBook a{
+    text-decoration: none;
+}
+.nooneBlock{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.nooneBlock .headerMenu a{
+    color: #222222;
+}
+.nooneBlock .headerLogo h1{
+    color: #222222;
+}
+.nooneBlock .headerLogo a{
+    color: #222222;
+}
+.nooneBlock .headerRegist{
+    background-color: #3337BF;
+    color: white;
+}
+.nooneBlock .headerBlock{
+    margin-bottom: 70px;
+}
+.nooneBlock h4{
+    font-size: 24px;
+    font-weight: 500;
+}
+.nooneBlock h3{
+    text-align: center;
+    color: #222;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 85px;
+    
+}
+
+
+
+.imageContainer{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.imageLeft{
+    position: absolute;
+    z-index: 100;
+    top:45%;
+    left: 0px;
+    cursor: pointer;
+}
+.imageRight{
+    position: absolute;
+    z-index: 100;
+    top:45%;
+    right: 0px;
+    cursor: pointer;
+}
+.imageBlock{
+    /* display: flex; */
+    width: 100%;
+    height: 450px;
+    border-radius: 24px;
+    margin-top: 25px;
+    overflow: hidden;
+    position: relative;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+.transitioning {
+    opacity: 0; 
+}
+.imageBlock img{
+    min-width: 100%;
+    height: max-content;
+    transition: transform 1s;
+}
+.imageBlock img:hover{
+    transform: scale(1.2);
+} 
+.infoBlock{
+    margin-top: 30px;
+}
+.information{
+    display: flex;
+    gap: 10px;
+}
+.information button{
+    width: 192px;
+    height: 40px;
+    background-color: #fff;
+    color: #3337BF;
+    border: 1px #3337BF solid;
+    border-radius: 16px;
+    
+    cursor: pointer;
+}
+.information a{
+    text-decoration: none;
+    color: #3337BF;
+}
+.line{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 24px;
+}
+.line p{
+    color: #222222;
+}
+.pBlock{
+    text-align: center;
+    font-size: 14px;
+    color: #6A6A6A;
+    margin-bottom: 48px;
+}
+.frameTickets{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.frameTicket{
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    border: 1px #CECECE solid;
+    height: 142px;
+    width: 560px;
+    border-radius: 12px;
+}
+.frameDate{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    background-color: #3337BF;
+    border-end-start-radius: 12px;
+    border-start-start-radius: 12px;
+}
+.frameDate p{
+    text-align: center;
+    font-size: 14px;
+}
+
+.frameLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    margin-left: 15px;
+    flex-basis: 315px;
+}
+.frameLeft .name{
+    font-size: 16px;
+    font-weight: 600;
+}
+.frameLeft .locat,
+.frameLeft .available{
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
+}
+.frameLeft .locat svg{
+    width: 20px;
+    height: 18px;
+}
+.frameRight{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: end;
+    
+}
+.frameInfo{
+    display: flex;
+}
+.frameRight p{
+    color: #505050;
+    font-size: 14px;
+}
+.frameRight buttom{
+    font-size: 14px;
+    color: #3337BF;
+    width: 130px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px #3337BF solid;
+    border-radius: 16px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+.frameRight a{
+    text-decoration: none;
+    color: #3337BF;
+}
+.eventDescr{
+    font-size: 16px;
+    line-height: 24px;
+    color: #505050;
+    
+}
+.eventDescr p{
+    text-indent: 1em;
+    padding-top: 1em;
+}
+.eventDescr ul{
+    padding-left: 2em;
+}
+.actors{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.actors .item{
+    color: #505050;
+    width:  250px;
+    
+
+}
+.actors .item .image{
+    width:  250px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.actors .item img{
+    height: 100%;
+    overflow: hidden;
+}
+
+.itemTicket{
+    display: flex;
+    gap: 20px;
+    
+}
+.itemTicket .image{
+    width: 170px;
+    height: 160px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.itemTicket .image img{
+    height: 100%;
+}
+.itemTicket .inform{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.itemTicket .inform h6{
+    font-size: 16px;
+    color: #505050;
+    font-weight: 400;
+}
+.itemTicket .inform h5{
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+.line2px{
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #E7E7E7;
+    padding: 20px 0;
+}
+.btnTicket{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.authorization{
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    
+}
+.authorization a{
+    display: flex;
+   
+    justify-content: center;
+    text-decoration: none;
+    color: #3337BF;
+
+}
+.btnCyanTicket{
+    width: 400px;
+    height: 56px;
+    color: #fff;
+    background-color: #3337BF;
+    border-radius: 16px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    margin-top: 40px;
+}
+.btnCyanTicket a{
+    color: #fff;
+    text-decoration: none;
+}
+.btnWhiteTicket{
+    width: 400px;
+    height: 56px;
+    border-radius: 16px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    margin-top: 40px;
+    color: #3337BF;
+    background-color: #fff;
+    border: 1px #3337BF solid;
+}
+.btnWhiteTicket a{
+    color: #3337BF;
+    text-decoration: none;
+}
+.ticketsList{
+    margin-top: 60px;
+}
+.ticketsList h4{
+    font-size: 24px;
+    text-align: left;
+}
+.cartList{
+    margin-top: 40px;
+}
+.currentTicket{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.downCurrentTicket,
+.addCurrentTicket,
+.delCurrentTicket{
+    cursor: pointer;
+}
+
+.cardTicket{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
+    gap: 20px;
+}
+.cardTicket .image{
+    width: 170px;
+    height: 160px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.cardTicket .image img{
+    height: 100%;
+}
+.cardTicket .inform{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.cardTicket .inform h4{
+    color: #222222;
+    
+}
+.cardTicket .inform h6{
+    font-size: 16px;
+    color: #505050;
+    font-weight: 400;
+}
+.cardTicket .inform h5{
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+.nooneBlock a{
+    text-decoration: none;
+}
+.currentTicket{
+    text-align: center;
+}
+.delTicket{
+    text-align: right;
+}
+.totalTicket{
+    margin-top: 85px;
+}
+.totalTicket h4{
+    font-size: 24px;
+    color: #000;
+    line-height: 3em;
+}
+.totalTicket h5{
+    font-size: 20px;
+    color: #222222;
+    font-weight: 400;
+    line-height: 1.8em;
+
+}
+.totalTicket b{
+    font-weight: 600;
+}
+.totalTicket .itogo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.totalTicket .btn{
+    text-align: center;
+}
+.totalTicket .table{
+    display: flex;
+    justify-content: space-between;
+}
+
+.roundedCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f5ff;
+    /* color: #0858f7; */
+    height: 40px; 
+    min-width: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+}
+.centerBlock input{
+    background: #0000;
+    border: 0;
+    color: #292929;
+    font-size: 14px;
+    outline: none;
+    padding-left: 0;
+}
+.roundedCircle svg{
+    color: #292929;
+    font-size: 18px;
+    transition: all .2s ease-in-out;
+}
+.rightBlock{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.userInfo h4{
+    color: #292929;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    margin-bottom: 0;
+}
+.userInfo p{
+    color: #000;
+    font-size: 12px;
+    margin-top: 0;
+    opacity: .7;
+}
+.userImg{
+    border: 2px solid #0858f7;
+    border-radius: 100%;
+    height: 40px;
+    padding: 2px;
+    width: 40px;
+   
+}
+.avatName{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.roundedCircle img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.itemOrder a{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #222222;
+}
+.itemOrder .images{
+    width: 170px;
+    height: 160px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.itemOrder .images img{
+    height: 100%;
+}
+.itemOrder .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.itemOrder .info span{
+    color: #505050;
+    font-size: 10px;
+}
+.itemOrder .info h3{
+    margin-top: 0;
+    text-align: left;
+    color: #222222;
+    font-size: 16px;
+}
+.itemOrder .info .name{
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+}
+.itemOrder .info h4{
+    color: #222222;
+    font-size: 24px;
+}
+.itemOrder .info h5{
+    color: #505050;
+    font-size: 16px;
+    font-weight: 400;
+}
+.itemOrder .info h6{
+    color: #222222;
+    font-size: 16px;
+    font-weight: 500;
+}
+.lineorders{
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #E7E7E7;
+    padding: 20px 0;
+}
+.oneOrder{
+    display: flex;
+    justify-content: space-between;
+}
+.itemOrderL h4{
+    font-size: 24px;
+    color: #222222;
+}
+.itemOrderL h5{
+    font-size: 20px;
+    color: #505050;
+    font-weight: 400;
+}
+.itemOrderL h3{
+    font-size: 20px;
+    color: #242B35;
+    margin-top: 0;
+    text-align: left;
+    line-height: 2em;
+}
+.lineL{
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #E7E7E7;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.itemOrderL .info h4{
+    line-height: 2.5em;
+}
+.itemOrderL .info h5{
+    font-size: 16px;
+    font-weight: 400;
+    color: #505050;
+    line-height: 1.8em;
+}
+.itemOrderL .info b{
+    font-weight: 500;
+}
+.itemOrderL .info p{
+    font-size: 16px;
+    color: #242B35;
+}
+.itemOrderR .image{
+    position: relative;
+    width: 460px;
+    height: 600px;
+    border-radius: 24px;
+    overflow: hidden;
+    
+}
+.itemOrderR .curtain{
+    position: absolute;
+    width: 460px;
+    height: 400px;
+    background: linear-gradient(to bottom, rgba(121, 121, 121, 0) 0%, rgba(51, 51, 51, 1) 61%);
+    bottom: 0;
+    left: 0;
+    
+}
+.itemOrderR .image img{
+    height: 100%;
+}
+.itemOrderR .btnInfo{
+    border-top: #fff 1px dashed;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+    z-index: 1;
+    font-weight: 400;
+    
+}
+.namiTicket{
+    position: absolute;
+    top:20px;
+    z-index: 1;
+    width: 460px;
+    height: 50px;
+}
+.namiTicket h4{
+    text-align: center;
+    color: #fff;
+}
+.itemOrderR .btnInfo p{
+    color: #F6F6F6;
+    font-size: 18px;
+    line-height: 2em;
+}
+.downloadTicket {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 45px;
+}
+.downloadTicket button{
+    width: 190px;
+    height: 56px;
+    border-radius: 16px;
+    background-color: #3337BF;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+   
+    
+}
+.downloadTicket a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.downloadTicket svg{
+    margin-right: 7px;
+}
+.menuButton{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 1140px;
+    margin: 35px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 23px;
+    opacity: 0; /* Скрываем блок изначально */
+    transition: opacity 1s ease; /* Плавный переход */
+}
+.menuButton button{
+    position: relative;
+    background-color: white;
+    width: 340px;
+    height: 190px;
+    border: none;
+    box-shadow: 0 .5rem 1rem #00000026;
+    border-radius: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-right: 16px;
+}
+.menuButton span{
+    position: absolute;
+    bottom: 15px;
+    left: 45px;
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+}
+/* profile  */
+.profile{
+    display: flex;
+    gap: 16px;
+    margin-top: 40px;
+}
+.profile .left{
+    background-color: #F6F6F6;
+    border-radius: 16px;
+    width: 300px;
+    padding: 15px;
+    max-height: 535px;
+}
+.acccount{
+    border-bottom: 1px #E7E7E7 solid;
+}
+.acccount .image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.acccount .image img{
+    width: 100%;
+}
+.acccount h5{
+    color: #222222;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 22px 0;
+}
+.menu{
+    
+    padding-top: 30px;
+}
+.menuitem{
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+.menuitem span{
+    width: 25px;height: 22px;
+}
+.menuitem.active{
+    background-color: #EBEBF9;
+}
+.menuitem h6{
+    font-size: 16px;
+    color: #222222;
+    font-weight: 600;
+    cursor: pointer;
+}
+.profile .item .info button{
+    height: 34px;
+    width: 100px;
+    border-radius: 16px;
+    background-color: #3337BF;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    margin-top: 1em;
+}
+.profile .item .info a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.profile .right{
+    width: 100%;
+}
+.profile .right h4{
+    font-size: 24px;
+    color: #222222;
+}
+.profile .right .line{
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #E7E7E7;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.profile .right .child p{
+    font-size: 14px;
+    color: #505050;
+}
+.profile .right .childblock{
+    background-color: #F6F6F6;
+    border-radius: 16px;
+    padding: 22px 20px;
+    margin-bottom: 40px;
+}
+.profile .right .childblock .name{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #E7E7E7;
+    padding-bottom: 5px;
+}
+.profile .right .childblock .name h4{
+    font-size: 24px;
+    color: #222222;
+}
+.profile .right .childblock .name a{
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+}
+.profile .right .childblock p{
+    font-size: 14px;
+    color: #505050;
+    margin-top: 10px;
+}
+.settinglock .item {
+    margin-bottom: 35px;
+}
+.settinglock .item .info{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-top: 16px;
+}
+.settinglock .item .info p{
+    font-size: 14px;
+    color: #505050;
+}
+.settinglock .item .info span{
+    cursor: pointer;
+}
+.settinglock .item .info input{
+    border: none
+}
+.settinglock .item h4{
+    color: #222222;
+    font-size: 24px;
+}
+.settinglock .item button{
+    width: 175px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #3337BF;
+    border-radius: 16px;
+    color: #3337BF;
+    cursor: pointer;
+}
+.topItems{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.topItems h3{
+    text-align: center;
+    color: #222;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 85px;
+}
+.topItem,
+.tomorrow{
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    opacity: 0; /* Скрываем блок изначально */
+    transition: opacity 1s ease; /* Плавный переход */
+}
+.visible {
+    opacity: 1; /* Блок становится видимым при добавлении класса */
+}
+.topItem .item,
+.tomorrow .item{
+    width: 350px;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+.topItem .item img,
+.tomorrow .item img{
+    height: 100%;
+    width: 100%;
+}
+.topItem .item h6,
+.tomorrow .item h6{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+}
+.topItem .item span,
+.tomorrow .item span{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #3337BF;
+    padding: 5px 7px ;
+}
+.tomorrow .item span{
+    background-color: #9433bf;
+}
+
+/* Планшеты 768 */
+@media (max-width: 768px) {
+    .headerBlock{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .headerMenu{
+        display: none;
+        
+    }
+    .headerLogo h1{
+        font-size: 32px;
+    }
+    .headerCarRegist{
+        padding-right: 25px;
+    }
+    .MenuPlanshet{
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        padding-left: 25px;
+    }
+    .MenuPlanshet svg{
+        fill: #505050;
+        width: 25px;
+        height: 25px;
+    }
+    .MenuPlanshet button{
+        padding-top: 3px;
+        background: #fff;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        border-radius: 50%;
+        border: none;
+        overflow: hidden;
+        border: 2px #ccc solid;
+    }
+    .mainBlock{
+        height: 535px;
+    }
+    .mainTitle{
+        height: 145px;
+    }
+    .mainTitle h2{
+        font-size: 28px;
+    }
+    .mainTitle h4{
+        font-size: 22px;
+    }
+    .manDate input{
+        width: 35px !important;
+    }
+    .findLocation .resultLocation{
+        width: 200px;
+    }
+    .resultSearch{
+        width: 320px;
+    }
+    .findTicket{
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    .findTicket input{
+        width: 175px;
+    }
+    .manDate{
+        width: 225px;
+    }
+    .btnSearch{
+        width: 225px;
+        height: 55px;
+    }
+    .nooneBlock{
+         padding: 0 25px;
+    }
+    .frameTickets{
+        justify-content: center;
+    }
+    .infoBlock .line,
+    .actors,
+    .eventDescr {
+        padding:  0 20px;
+    }
+    .imageContainer .imageBlock img{
+        max-width: 100%;
+    }
+    .oneOrder{
+        gap: 25px;
+    }
+    .itemOrderR .image,
+    .itemOrderR .namiTicket,
+    .itemOrderR .curtain{
+        width: 390px;
+    }
+    .itemOrderR .btnInfo{
+        width: 335px;
+    }
+}
+
+
+/* mobile  400*/
+@media (max-width: 400px) {
+    .mainBlock{
+        padding-top: 20px;
+    }
+    .headerBlock{
+        grid-template-columns: 1fr 25px;
+    }
+    .mainTitle{
+        height: 180px;
+    }
+    .mainTitle h2{
+        font-size: 22px;
+    }
+    .mainTitle h4{
+        line-height: 2em;
+        font-size: 14px;
+    }
+    .headerLogo h1{
+        font-size: 15px;
+    }
+    .avatName .userInfo{
+        display: none;
+    }
+    .headerCar{
+        display: none;
+    }
+    .headerRegist{
+        width: 40px;
+        border-radius: 50%;
+    }
+    .headerRegist div{
+        display: none;
+    }
+    .headerRegist span{
+        margin: 0 13px;
+    }
+    .mainBlock{
+        height: 560px;
+    }
+    .findName input,
+    .manDate,
+    .findLocation input,
+    .btnSearch{
+        height: 40px;
+        width: 130px;
+        font-size: 12px;
+        
+    }
+    .findName input,
+    .findLocation input{
+        padding-left: 35px;
+    }
+    .findName input::placeholder,
+    .findLocation input::placeholder,
+    .selectData{
+        font-size: 11px;
+        
+    }
+    .findName .man,
+    .findLocationIcon{
+        top: 11px;
+    }
+    .manDate span{
+        top: 12px;
+    }
+    .manDate svg{
+        width: 17px;
+        height: 18px;
+    }
+    .findName .man svg,
+    .findLocationIcon svg{ 
+        width: 15px;
+        height: 16px;
+    }
+    .selectData{
+        top: 14px;
+        left: 47px;
+    }
+    .findName .manClose{
+        top: 12px;
+    }
+    .findLocationSelect{
+        top: 9px;
+    }
+    .resultSearch{
+        width: 150%;
+        padding: 0 15px;
+        top: 42px;
+    }
+    .resultLocation p{
+        font-size: 14px;
+    }
+    .resultSearch a{
+        font-size: 14px;
+    }
+    .blockImage{
+        height: 165px;
+        width: 120px;
+    }
+    .blockSlider{
+        height: 312px;
+        width: 165px;
+    }
+    .topSlider .blockInfo{
+        height: 215px;
+        width: 165px;
+    }
+    .blockTitle {
+        width: 123px;
+    }
+    .blockTitle h6{
+        height: 20px;
+    }
+    .blockTitle p{
+        display: grid;
+    }
+    .imageBlock{
+        height: 205px;
+    }
+    .imageContainer span{
+        display: none;
+    }
+    .infoBlock .line{
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+    .line p{
+        font-size: 12px;
+    }
+    .nooneBlock{
+        margin-top: 20px;
+    }
+    .nooneBlock .headerBlock{
+        margin-bottom: 10px;
+    }
+    .nooneBlock h3{
+        margin-top: 55px;
+    }
+    .actors{
+        justify-content: center;
+    }
+    .frameTicket{
+        grid-template-columns: 60px 1fr;
+    }
+    .frameLeft{
+        margin-left: 10px;
+    }
+    .frameInfo{
+        justify-content: space-between;
+    }
+    .frameRight{
+        padding-right: 10px;
+    }
+    .eventDescr p,
+    .eventDescr li{
+        font-size: 14px;
+    }
+    .information button{
+        width: 128px;
+    }
+    .nooneBlock h4{
+        font-size: 20px;
+    }
+    .nooneBlock h3{
+        font-size: 20px;
+    }
+
+    .itemTicket .inform h6,
+    .itemTicket .inform h5,
+    .btnCyanTicket,
+    .btnWhiteTicket{
+        font-size: 12px;
+    }
+    .frameTicket{
+        height: 120px;
+    }
+    .frameLeft{
+        flex-basis: 120px;
+    }
+    .frameLeft .name{
+        font-size: 12px;
+    }
+    .frameLeft .locat,
+    .frameLeft .available{
+        font-size: 11px;
+        align-items: center;
+    }
+    .frameRight p{
+        font-size: 12px;
+        text-align: right;
+    }
+    .frameRight buttom{
+        font-size: 12px;
+        width: 100px;
+        height: 28px;
+        line-height: 28px;
+    }
+    .actors .item p{
+        font-size: 12px;
+        line-height: 1em;
+        padding-top: 2px;
+    }
+    .actors .item{
+        width: 70px;
+    }
+    .actors .item .image{
+        width: 70px;
+        height: 70px;
+    }
+    .information button{
+        width: 110px;
+        height: 32px;
+    }
+    .information a{
+        font-size: 11px;
+    }
+    .inform h4{
+        font-size: 14px;
+    }
+    .itemTicket .image{
+        width: 135px;
+        height: 95px;
+    }
+    .btnCyanTicket{
+        width: 210px;
+        height: 40px;
+    }
+    .btnWhiteTicket{
+        width: 210px;
+        height: 40px;
+    }
+    .nooneBlock h3 {
+        margin-top: 25px;
+    }
+    .pBlock{
+        margin-bottom: 40px;
+    }
+    .ticketsList{
+        margin-top: 30px;
+    }
+    .cardTicket{
+        grid-template-columns: 80px 125px 55px 1fr;
+        gap: 10px;
+        align-items: center;
+    } 
+    .cardTicket .image{
+        width: 70px;
+        height: 55px;
+    }
+    .cardTicket .inform h4{
+        padding-bottom: 4px;
+    }
+    .itemOrder .info .name{
+        display: block;
+    }
+    .itemOrder .info h3{
+        font-size: 14px;
+    }
+    .itemOrder .info h4{
+        font-size: 15px;
+    }
+    .itemOrder .info h5,
+    .itemOrder .info h6,
+    .itemOrder .info p,
+    .cardTicket .inform h5,
+    .cardTicket .inform h6{
+        font-size: 12px;
+        line-height: 1.5em;
+    }
+    .itemOrder .images{
+        width: 140px;
+        height: 130px;
+    }
+    .currentTicket{
+        gap: 7px;
+    }
+    .currentTicket{
+        font-size: 12px;
+    }
+    .currentTicket span,
+    .currentTicket svg{
+        width: 15px;
+        height: 15px;
+    }
+    .delTicket{
+        display: flex;
+        align-items: center;
+    }
+    .delTicket svg{
+        width: 14px;
+        height: 16px;
+    }
+    .totalTicket{
+        margin-top: 20px;
+    }
+    .totalTicket h4,
+    .totalTicket h5{
+        font-size: 14px;
+    }
+    .oneOrder{
+        flex-direction: column-reverse;
+    }
+    .itemOrderR .image{
+        width: 100%;
+        height: 352px;
+    }
+    .itemOrderR .image img{
+        width: 100%;
+        height: auto;
+    }
+    .itemOrderR .btnInfo p{
+        font-size: 14px;
+    }
+    .itemOrderR .btnInfo{
+        width: calc(100% - 50px);
+    }
+    .downloadTicket button{
+        width: 150px;
+        height: 44px;
+    }
+    .downloadTicket a{
+        font-size: 12px;
+    }
+    .itemOrderL h4,
+    .itemOrderL h5{
+        font-size: 14px;
+    }
+    .itemOrderL h3{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .lineL{
+        margin: 10px 0;
+    }
+    .itemOrderL .info h5{
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+    .itemOrderL .info p{
+        font-size: 14px;
+    }
+    .namiTicket{
+        width: 100% !important;
+    }
+    .profile{
+        flex-direction: column;
+    }
+    .menuButton{
+        display: block;
+        width: auto;
+        margin: 25px auto;
+    }
+    .menuButton button{
+        width: 200px;
+        height: 125px;
+    }
+    .menuButton span{
+        bottom: 10px;
+        left: 15px;
+        font-size: 15px;
+    }
+    .topItems h3{
+        margin-top: 20px;
+    }
+    .topItems{
+        width: 100%;
+    }
+    .topItem,
+    .tomorrow{
+        gap: 2px;
+    }
+    .topItem .item,
+    .tomorrow .item{
+        width: 196px;
+        height: 125px;
+    }
+    .topItem .item h6,
+    .tomorrow .item h6{
+        font-size: 15px;
+    }
+    .topItem .item span,
+    .tomorrow .item span{
+        font-size: 11px;
+        right: 0;
+    }
+    .menu{
+        display: flex;
+        overflow-x: scroll;
+
+    }
+    .menuitem span{
+        width: 20px;
+        height: 18px;
+    }
+    .menuitem svg{
+        width: 20px;
+        height: 18px;
+    }
+    .menuitem h6{
+        font-size: 13px;
+    }
+}

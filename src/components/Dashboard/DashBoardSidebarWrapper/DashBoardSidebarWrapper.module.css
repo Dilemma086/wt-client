@@ -1,0 +1,103 @@
+.sidebarWrapper{
+    width: 20%;
+    background: #ffffffe6;
+   
+    height: 100vh;
+    
+}
+.sidebarWrapper ul {
+    padding: 10px 15px;
+}
+.sidebarWrapper li{
+    margin-bottom: 7px;
+}
+.sidebarWrapper a{
+    text-decoration: none;
+}
+.icon{
+    align-items: center;
+    display: flex;
+    height: 25px;
+    justify-content: center;
+    margin-right: 10px;
+    width: 25px;
+} 
+.icon svg{
+    font-size: 22px;
+}
+.active svg{
+    color: #0858f7;
+}  
+.sidebarButton{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    color: #5e5d72;
+    font-size: 15px;
+    font-weight: 600;
+    justify-content: left;
+    padding: 12px 10px;
+    text-align: left;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffffe6;
+    transition: all .3s ease-in-out;
+}
+.sidebarButton.active{
+    background-color: rgb(241, 241, 241);
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    justify-content: center;
+    margin-left: auto;
+    width: 25px;
+}
+.posRel{
+    position: relative;
+}
+.currentOrder{
+    position: absolute;
+    top: 7px;
+    left: 28px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #B70404;
+    color: #fff;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+}
+/* Планшеты 768 */
+@media (max-width: 768px) {
+    .sidebarWrapper{
+        height: 650px;
+    }
+    .sidebarWrapper p{
+        display: none;
+    }
+    .sidebarWrapper button{
+        width: 80px;
+    }
+    .theadDark th{
+        font-size: 10px;
+    }
+}
+@media (max-width: 400px) {
+    
+    .icon span,
+    .icon svg{
+        width: 20px;
+        height: 20px;
+    }
+    .sidebarWrapper button{
+        width: 50px;
+    }
+    .sidebarWrapper ul{
+        padding: 10px 5px;
+    }
+}

@@ -1,0 +1,74 @@
+.paginatBlock{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+.ulPagination{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.ulPagination li{
+    margin-right: 5px;
+}
+.arrowPagination{
+    opacity: 0.38;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    cursor: pointer;
+}
+.arrowPagination.active{
+    opacity: 1;
+}
+
+
+.svgIcon{
+    width: 20px;
+    height: 20px;
+    font-size: 1.25rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0px -8px;
+}
+.paginationItem{
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.paginationItem.active{
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 118, 210);
+    
+}
+
+@media (max-width: 400px){
+    .paginatBlock p{
+        font-size: 8px;
+    }
+    .arrowPagination{
+        width: 12px;
+        height: 12px;
+    }
+    .svgIcon{
+        width: 19px;
+        height: 17px;
+    }
+    .paginationItem{
+        width: 16px;
+        height: 16px;
+        font-size: 8px;
+    }
+    
+};
+    

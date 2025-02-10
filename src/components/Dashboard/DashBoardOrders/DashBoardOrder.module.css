@@ -1,0 +1,264 @@
+.cardOrders{
+    width: 100%;
+    overflow-x: scroll;
+}
+.cardWrapper{
+    
+    background-clip: initial;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 10px;
+    position: relative;
+    padding: 2rem;
+    margin: 20px;
+    border: 0;
+}
+.cardWrapper h5{
+    color: #403e57;;
+    font-size: 1.25em;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.hd{
+    color: #403e57;
+    font-size: 1.25em;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+
+}
+.cardWrapper h6{
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #403e57;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.blockInp{
+    margin-bottom: 10px;
+}
+.btnBlue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background: #0858f7;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 25px;
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+.btnBlue svg{
+    font-size: 25px;
+}
+.info svg{
+    font-size: 50px;
+    opacity: .2;
+}
+.info h5{
+    font-size: 15px;
+    opacity: .5;
+    text-align: center;
+}
+.info a{
+    
+    color: #000;
+}
+.successMessage{
+    color: #0858f7;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+
+
+/* Table */
+.cardWrappertableResponsive{
+    margin-top: 1rem;
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+}
+.dFlex{
+    display: flex;
+    align-items: center;
+}
+
+.tableBordered{
+    border-collapse: collapse;
+}
+.theadDark th{
+    background-color: #1866ee;
+    border-color: #ffffff1a;
+    font-size: 13px;
+    color: #fff;
+    padding: .75rem;
+    border: rgba(255, 255, 255, 0.1) solid 1px;
+    text-transform: uppercase;
+}
+.widthOneTh{
+    width: 200px !important;
+}
+.dFlex{
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+.selectInput{
+    cursor: inherit;
+    width: 20px !important;
+    height: 20px!important;
+    margin-bottom: 0px!important;
+}
+.MuiSvgIcon{
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: rgba(0, 0, 0, 0.6);
+}
+.tableResponsive td{
+    border: 1px solid #dee2e6;
+}
+
+.imgCardShadow{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+.imgWrapper{
+    width: 90px;
+    height: 54px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, .125);
+    box-shadow: 0 .5rem 1rem #00000026;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgCardShadow img{
+    height: 80%;
+}
+.center{
+    text-align: center;
+}
+.infoTD{
+    width: 300px;
+}
+.infoBlock{
+    /* width: 270px; */
+    width: auto;
+}
+.textRight{
+    text-align: right;
+}
+
+.info h6{
+    width: 100%;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    color: #403e57;
+}
+.info p{
+    width: 100%;
+    color: #5e5d72;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+}
+.info span{
+    color: #403e57;
+    font-weight: 600;
+}
+.MuiButtonBase{
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+}
+
+.MuiButtonBase svg{
+    overflow: hidden;
+    font-size: 15px;
+    vertical-align: middle;
+}
+.colorView{
+    background: rgba(203, 60, 231, 0.2);
+    color: #9c27b0;    
+}
+.colorEdit{
+    background: rgba(26, 159, 83, 0.2);
+    color: rgb(46, 125, 50);
+}
+.status{
+    position: relative;
+    cursor: pointer;
+}
+.listStatus{
+    position: absolute;
+    top: 25px;
+    left: -14px;
+    height: 108px;
+    width: 100px;
+    background-color: #fff;
+    z-index: 2;
+    padding: 14px;
+    border-radius: 5px;
+    line-height: 1.8em;
+    box-shadow: 0 .5rem 1rem #00000026;
+}
+.status span{
+    color: #403e57;
+    font-weight: 600;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+}
+.isNoRead{
+    background: rgba(203, 60, 231, 0.2);
+}
+/* Планшеты 768 */
+@media (max-width: 768px) {
+    .theadDark th{
+        font-size: 10px;
+        padding: 2px 3px;
+    }
+    .tableResponsive td{
+        padding: 5px 4px;
+    }
+    .tableResponsive{
+        overflow-x: scroll;
+    }
+    .infoBlock .info,
+    .infoBlock .info a{
+        font-size: 13px;
+    }
+}
+@media (max-width: 400px){
+    .hd{
+        font-size: 1em;
+    }
+}

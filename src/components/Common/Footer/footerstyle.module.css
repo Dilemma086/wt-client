@@ -1,0 +1,262 @@
+.footer{
+    margin-top: 90px;
+}
+.footerLine{
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #E7E7E7;
+    padding: 20px 0;
+}
+.footerPadding{
+    max-width: 1140px;
+    margin: 50px auto 0;
+
+}
+.footerLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 55px;
+}
+.footerLogo h4{
+    color: #222222;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 400;
+}
+.footerLogo a{
+    text-decoration: none;
+    color: #222222;
+}
+.footerInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+.footerInfo .left h4{
+    font-size: 24px;
+    color: #222222;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+.footerInfo .left p{
+    font-size: 14px;
+    color: #505050;
+    padding-bottom: 80px;
+    width: 310px;
+}
+.footerInfo .left h6{
+    font-size: 14px;
+    color: #505050;
+    padding-bottom: 50px;
+    font-weight: 400;
+}
+.footerInfo .left h5{
+    font-size: 20px;
+    color: #222222;
+    font-weight: 400;
+    padding-bottom: 24px;
+}
+.footerInfo .right{
+    display: flex;
+    justify-content: space-between;
+}
+.footerInfo .right h4{
+    font-size: 24px;
+    color: #222222;
+    font-weight: 400;
+    border-bottom: 2px solid #E7E7E7;
+    margin-bottom: 25px;
+}
+.footerInfo .right li{
+    line-height: 1.5em;
+}
+.footerInfo .right a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #505050;
+}
+.footerLine2x{
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #E7E7E7;
+}
+.footerEmail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.footerEmail p{
+    font-size: 20px;
+    color: #505050;
+    line-height: 1.1em;
+}
+.footerEmail .right{
+    text-align: right;
+    position: relative; 
+}
+
+.footerEmail .right input{
+    width: 475px;
+    height: 56px;
+    border: 1px solid #6A6A6A;
+    border-radius: 16px;
+    padding-left: 45px;
+}
+.footerEmail .right .mail{
+    position: absolute;
+    left: 60px;
+    top: 19px;
+    width: 20px;
+    height: 10px;
+}
+.footerEmail .right .arrow{
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    width: 20px;
+    height: 10px;
+    cursor: pointer;
+}
+.footersoc{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.footersoc a{
+    font-size: 16px;
+    color: #222222;
+    padding: 0 10px;
+    text-decoration: none;
+}
+.footerbotton{
+    position: relative;
+}
+.footerbotton .left{
+    position: absolute;
+    left: 0;
+} 
+.footerbotton .right{
+    position: absolute;
+    right: 0;
+}
+.quickNavigation{
+    display: none;
+}
+
+/* Планшеты 768 */
+@media (max-width: 768px) { 
+    .footerLogo h4{
+        font-size: 22px;
+    }
+    .footerInfo{
+        grid-template-columns: 1fr;
+    }
+    .footerEmail{
+        grid-template-columns: 1fr;
+    }
+    .footerInfo .left p{
+        width: auto;
+    }
+    .footerEmail .right{
+        text-align: left;
+        margin-top: 30px;
+    }
+    .footerEmail .right input{
+        width: auto;
+    }
+    .footerEmail .right h4{
+        font-style: 22px;
+    }
+    .footerEmail .right .mail{
+        left: 15px;
+    }
+    .footerEmail .right .arrow{
+        left: 170px;
+        top: 17px
+    }
+    .footerPadding{
+        padding: 0 25px;
+    }
+    .footerLine2x{
+        margin-top: 15px;
+    }
+}
+
+
+/* mobile  400*/
+@media (max-width: 400px) { 
+    .footerLogo a{
+        font-size: 17px;
+    }
+    .footerInfo .right{
+        flex-wrap: wrap;
+    }
+    .footerInfo .right h4{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .footerInfo .right div{
+        margin-bottom: 25px;
+    }
+    .footerInfo .left p{
+        padding-bottom: 30px;
+    }
+    .footersoc{
+        flex-direction: column;
+        font-size: 14px;
+        gap: 10px;
+    }
+    .footersoc a{
+        font-size: 14px;
+        padding-left: 0;
+        padding-right: 7px;
+    }
+    .footerbotton .left{
+        display: none;
+    }
+    .footerEmail p{
+        font-size: 14px;
+    }
+    .quickNavigation{
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        background-color: white;
+        height: 40px;
+        width: 100%;
+        z-index: 10;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .quickNavigation p{
+        font-size: 9px;
+        color: #222222;
+        margin-top: -5px;
+        
+    }
+    .quickNavigation a{
+        text-decoration: none;
+        text-align: center;
+        position: relative;
+    }
+    .quickNavigation svg{
+        width: 22px;
+        height: 22px;
+    }
+    .ButMenuCurrentCart{
+        position: absolute;
+        top: 0px;
+        right: -5px;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background-color: #B70404;
+        color: #fff;
+        font-size: 10px;
+        text-align: center;
+    }
+
+}

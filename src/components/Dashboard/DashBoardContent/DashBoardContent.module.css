@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.dashBoardContent button{
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0.5);
+}
+.dashBoardContent{
+    width: 100%;
+    padding: 30px;
+}
+.dashboardBoxWrapperRow{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.boxWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+.dashboardBox{
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    text-transform: capitalize;
+    width: 48%;
+}
+.dashboardBox1{
+    background-image: linear-gradient(to right, rgb(29, 162, 86), rgb(72, 212, 131));
+}
+.dashboardBox2{
+    background-image: linear-gradient(to right, rgb(192, 18, 226), rgb(235, 100, 254));
+}
+.dashboardBox3{
+    background-image: linear-gradient(to right, rgb(44, 120, 229), rgb(96, 175, 245));
+}
+.dashboardBox4{
+    background-image: linear-gradient(to right, rgb(225, 149, 14), rgb(243, 205, 41));
+}
+.chart{
+    height: 110px;
+    width: 110px;
+    bottom: 20px;
+    left: 20px;
+    opacity: .05;
+    position: absolute;  
+}
+.chart svg{
+    color: #000;
+    font-size: 110px;
+}
+.w100{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.icon{    
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #0000, #0000004d);
+    border-radius: 10px;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    width: 50px;
+}
+.icon svg{     
+    color: #fff;
+    font-size: 36px;
+    opacity: .4;
+}
+.textWhite{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+.textWhiteFontBold{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #fff;
+}
+.textWhiteP{
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+}
+.col1 h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+.col1 span {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 45px;
+}
+.w100bottom{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 15px;
+}
+.mlAuto{
+    margin-left: auto;
+}
+.toggleIcon {
+    border-radius: 50% ;
+    color: #00000080;
+    cursor: pointer;
+    font-size: 22px;
+    height: 40px;
+    min-width: 40px;
+    width: 40px;
+}
+.toggleIcon svg {
+    color: #fff;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.boxGraph {
+    background-image: linear-gradient(#ab1ab5, #6f2af7);
+    border-radius: 10px;
+    padding: 25px;
+}
+.recharts {
+    width: 100%;  /* Ensure width is set */
+    height: 210px;  /* Set a fixed height */
+}
+.cardEvents{
+    word-wrap: break-word;
+    background-clip: initial;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    position: relative;
+    padding: 1rem;
+    margin-top: 20px;
+    border: 0;
+}
+.hd{
+    color: #403e57;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+.cardFilters{
+    display: flex;
+    flex-wrap: wrap;
+}
+.blockFilter{
+    margin-top: 1em;
+}
+.blockFilter h4{ 
+    color: #403e57;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Table */
+.cardWrappertableResponsive{
+    margin-top: 1rem;
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+}
+.dFlex{
+    display: flex;
+    align-items: center;
+}
+
+.tableBordered{
+    border-collapse: collapse;
+}
+.theadDark th{
+    background-color: #1866ee;
+    border-color: #ffffff1a;
+    font-size: 13px;
+    color: #fff;
+    padding: .75rem;
+    border: rgba(255, 255, 255, 0.1) solid 1px;
+    text-transform: uppercase;
+}
+.widthOneTh{
+    width: 200px !important;
+}
+.dFlex{
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+.selectInput{
+    cursor: inherit;
+    width: 20px !important;
+    height: 20px!important;
+    margin-bottom: 0px!important;
+}
+.MuiSvgIcon{
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: rgba(0, 0, 0, 0.6);
+}
+.tableResponsive td{
+    border: 1px solid #dee2e6;
+}
+
+.imgCardShadow{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+.imgWrapper{
+    width: 90px;
+    height: 54px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, .125);
+    box-shadow: 0 .5rem 1rem #00000026;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgCardShadow img{
+    height: 80%;
+}
+.center{
+    text-align: center;
+}
+.infoTD{
+    width: 300px;
+}
+.infoBlock{
+    /* width: 270px; */
+    width: auto;
+}
+.textRight{
+    text-align: right;
+}
+
+.info h6{
+    width: 100%;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    color: #403e57;
+}
+.info p{
+    width: 100%;
+    color: #5e5d72;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+}
+.info span{
+    color: #403e57;
+    font-weight: 600;
+}
+.MuiButtonBase{
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+}
+
+.MuiButtonBase svg{
+    overflow: hidden;
+    font-size: 15px;
+    vertical-align: middle;
+}
+.colorView{
+    background: rgba(203, 60, 231, 0.2);
+    color: #9c27b0;    
+}
+.colorEdit{
+    background: rgba(26, 159, 83, 0.2);
+    color: rgb(46, 125, 50);
+}
+.colorDel{
+    background: rgba(241, 17, 51, 0.2);
+    color: rgb(211, 47, 47);
+}
+
+/* Планшеты 768 */
+@media (max-width: 768px) {
+    .theadDark th{
+        font-size: 10px;
+        padding: 2px 3px;
+    }
+    .tableResponsive td{
+        padding: 5px 4px;
+    }
+    .tableResponsive{
+        overflow-x: scroll;
+    }
+    .infoBlock .info,
+    .infoBlock .info a,
+    .infoBlock .info h6,
+    .dFlex span{
+        font-size: 13px;
+        white-space: normal;
+        font-weight: 400;
+        text-transform: none;
+    }
+    .infoBlock{
+        width: auto;
+        padding-left: 9px;
+    }
+    .infoBlock .description{
+        width: 250px;
+    }
+    .dashBoardContent{
+        width: 590px;
+    }
+    .dashboardBoxWrapperRow{
+       display: flex;
+       flex-direction: column;
+       width: 590px;
+    }
+    .boxWrapper{
+        width: 590px;
+        gap: 10px;
+    }
+    .dashBoardContent .dashboardBox{
+        width: 290px;
+    }
+    .boxGraph{
+        display: none;
+        width: 240px;
+        margin-top: 16px;
+    }
+    .textWhiteFontBold{
+        padding-top: 25px;
+    }
+    /* mobile  400*/
+    @media (max-width: 400px) {
+        .dashBoardContent{
+           display: grid;
+        }
+        .dashboardBoxWrapperRow{
+            width: 100%;
+        }
+        .boxWrapper{
+            width: 100%;
+        }
+        .dashBoardContent .dashboardBox{
+            width: 100%;
+        }
+        .col1{
+            font-size: 13px;
+        }
+        .dashboardBox{
+            height: 130px;
+            padding: 14px;
+        }
+        .textWhite{
+            font-size: 13px;
+            font-weight: 400
+        }
+        .w100bottom{
+            top: 0;
+        }
+        .icon{
+            width: 40px;
+            height: 40px;
+        }
+        .icon svg{  
+            font-size: 25px; 
+        }
+    }
+}

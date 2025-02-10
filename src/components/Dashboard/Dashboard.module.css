@@ -1,0 +1,251 @@
+.cardWrapper{
+    /* width: 100%; */
+    background-clip: initial;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 10px;
+    position: relative;
+    padding: 2rem;
+    margin: 20px;
+    border: 0;
+}
+.mainDashBoard{
+    display: flex;
+    background: #ebe9e9;
+}
+
+ul{
+    list-style-type: none;
+}
+td{
+    padding: .75rem;
+}
+
+
+.tableResponsive td{
+    border: 1px solid #dee2e6;
+}
+.tableBordered{
+    width: 100%;
+    border-collapse: collapse;
+}
+.textcenter{
+    text-align: center;
+}
+.theadDark th{
+    background-color: #1866ee;
+    border-color: #ffffff1a;
+    font-size: 13px;
+    color: #fff;
+    padding: .75rem;
+    border: rgba(255, 255, 255, 0.1) solid 1px;
+    text-transform: uppercase;
+}
+.widthOneTh{
+    width: 200px !important;
+}
+.dFlex{
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+.infoBlock{
+    /* width: 270px; */
+    width: auto;
+}
+.infoBlock p,
+.dFlex p{
+    color: #5e5d72;
+    font-size: 13px;
+}
+.selectInput{
+    cursor: inherit;
+    /* width: 20px !important;
+    height: 20px!important; */
+    margin-bottom: 0px!important;
+}
+.cardWrapper h5{
+    color: #403e57;;
+    font-size: 1.25em;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.MuiSvgIcon{
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: rgba(0, 0, 0, 0.6);
+}
+.tableResponsive td{
+    border: 1px solid #dee2e6;
+}
+.MuiButtonBase{
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+}
+
+.MuiButtonBase svg{
+    overflow: hidden;
+    font-size: 15px;
+    vertical-align: middle;
+}
+.colorView{
+    background: rgba(203, 60, 231, 0.2);
+    color: #9c27b0;    
+}
+.colorEdit{
+    background: rgba(26, 159, 83, 0.2);
+    color: rgb(46, 125, 50);
+}
+.colorDel{
+    background: rgba(241, 17, 51, 0.2);
+    color: rgb(211, 47, 47);
+}
+
+/* blockView */
+.blockView {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 50px 20%;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    visibility: hidden; /* Prevents interaction when not visible */
+}
+
+.blockView.visible {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Allows interaction */
+}
+.blockView h6{
+    color: #403e57;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.blockView h4{
+    color: #212529;
+    line-height: 32px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.blockView p{
+    font-size: 15px;
+    color: #403e57;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    text-indent: 2em;
+    padding-bottom: .7em;
+}
+.rowModal{
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    
+}
+.rowImage{
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    width: 100%;
+    border-radius: 20px;
+}
+.imgBlock img{
+    max-height: 100%;
+    border-radius: 20px;
+    border: 2px  #212529 solid;
+}
+.closeModal{
+    text-align: right;
+    font-size: 4em;
+    cursor: pointer;
+}
+.closeModal span{
+    color: #403e57;
+}
+.descrBlock{
+    margin-top: 3.5rem;
+    display: grid;
+    justify-content: center;
+
+}
+.imgBlock{
+    text-align: center;
+}
+.locat_category{
+    display: flex;
+    gap: 20px;
+}
+.locat_category p{
+    text-indent: 0;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 0;
+}
+.locat_category li{
+    font-size: 12px;
+    opacity: .7;
+}
+.nameBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.rowProductInfo{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.titelInfo{
+    display: flex;
+    align-items: center;
+    color: #5e5d72;
+}
+.titelInfo span{
+    height: 23px;
+}
+.titelInfo .icon{
+    font-size: 22px;
+    margin-right: 24px;
+}
+.titelInfo .name{
+    font-size: 15px;
+    font-weight: 600;
+}
+.descInfo{
+    font-size: 15px;
+    opacity: .8;
+    color: #212529;
+}
+/* Планшеты 768 */
+@media (max-width: 768px) {
+    .theadDark th{
+        font-size: 10px;
+        padding: 2px 3px;
+    }
+    .tableResponsive td{
+        padding: 5px 4px;
+    }
+    .tableResponsive{
+        overflow-x: scroll;
+    }
+}
