@@ -1,19 +1,23 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom'
 import style from './../../Client/mainstyle.module.css'
 
 const PopularEvents = (props) => {
     const [isVisible, setIsVisible] = useState(false);
+    const blockRef = useRef(null); // Используем ref для доступа к элементу
 
     const handleScroll = useCallback(() => {
-        const topItem = document.querySelector(`.${style.topItem}`);
-        const rect = topItem.getBoundingClientRect();
-        
-        if (rect.top < window.innerHeight) {
-            setIsVisible(true); // Устанавливаем состояние видимости
-            window.removeEventListener('scroll', handleScroll); // Удаляем слушатель после появления
+        const block = blockRef.current; // Получаем текущий элемент из ref
+        if (block) { // Проверяем, что элемент существует
+            const rect = block.getBoundingClientRect();
+            
+            if (rect.top < window.innerHeight) {
+                setIsVisible(true); // Устанавливаем состояние видимости
+                window.removeEventListener('scroll', handleScroll); // Удаляем слушатель после появления
+            }
         }
     }, []);
+
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
@@ -27,7 +31,7 @@ const PopularEvents = (props) => {
     return(
         <div className={style.topItems}>
             <h3>Популярные мероприятия</h3>
-            <div className={`${style.topItem} ${isVisible ? style.visible : ''}`}>
+            <div className={`${style.topItem} ${isVisible ? style.visible : ''}`} ref={blockRef}>
             {events.map(event =>(
                 <div className={style.item}>
                     <Link to={`/events/${event.id}`}>
