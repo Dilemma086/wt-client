@@ -31,9 +31,7 @@ export const getResetActionCreater = () => ({ type: GET_RESET });
 
 export const getCategoryThunkCreator = (category) => async  (dispatch) => {
     try{
-        
         const data = await categoryAPI.getCategory(category)
-        console.log(data)
         dispatch(getCategoryhActionCreater(data))
     }
     catch (error) {
