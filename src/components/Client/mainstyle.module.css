@@ -1216,6 +1216,7 @@
     color: white;
     font-size: 22px;
     font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .topItem .item span,
 .tomorrow .item span{
@@ -1705,10 +1706,11 @@
     .topItem,
     .tomorrow{
         gap: 2px;
+        padding: 5px;
     }
     .topItem .item,
     .tomorrow .item{
-        width: 196px;
+        width: 48%;
         height: 125px;
     }
     .topItem .item h6,
